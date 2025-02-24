@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router";
+import Nav from "../components/Nav";
 
 function Product() {
   return (
-    <div>Product</div>
-  )
+    <>
+      <Nav />
+      <div>Product</div>
+      <Outlet />
+    </>
+  );
 }
 
-export default Product
+export default Product;
