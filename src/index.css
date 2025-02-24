@@ -36,6 +36,9 @@ a:hover {
   padding: 12px 20px;
   border: solid 1px #fff;
 }
+.active-link {
+  color: red;
+}
 .containter {
   background: #000;
 }
