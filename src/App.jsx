@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Product from "./pages/Product";
 import Nav from "./components/Nav";
 import Param from "./components/Param";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         <Param />
       </div>
     ),
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
 function App() {
