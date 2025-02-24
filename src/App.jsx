@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Nav from "./components/Nav";
+import Param from "./components/Param";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,15 @@ const router = createBrowserRouter([
       <div>
         <Nav />
         <Product />
+      </div>
+    ),
+  },
+  {
+    path: "/job/:id",
+    element: (
+      <div>
+        <Nav />
+        <Param />
       </div>
     ),
   },
